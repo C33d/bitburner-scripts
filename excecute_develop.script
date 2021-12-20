@@ -1,0 +1,11 @@
+var url = "https://gitlab.com/ceeed/bitburner-scripts/-/raw/develop/"
+var sub_dir = "scripts/"
+var bootstrap_script_name = "bootstrap.script";
+
+var full_url = url + sub_dir + bootstrap_script_name
+
+wget full_url bootstrap_script_name
+
+tprint("URL: " + full_url);
+
+run(bootstrap_script_name);
